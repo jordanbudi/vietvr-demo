@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        
+        <a-entity camera look-controls>
+          <a-entity cursor="fuse: true; fuseTimeout: 2000"
+                    position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                    material="color: black; shader: flat">
+          </a-entity>
+        </a-entity>
+
+    <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+        <a-entity
+            position="0 3.5 -5"
+            geometry="primitive: plane; width: 4"
+            material="color: #0000FF"
+            scale="2 2 2"
+            text="color: white; align: center; wrapCount:16; font: dejavu;
+                  value: DEMO for WLA ver.DEC2018"
+          ></a-entity>
+          
+          <a-link 
+          position="0 1 5"
+          href="index3.html"
+          titleColor="#0000FF"
+          title="." 
+          visualAspectEnabled="false"
+          ></a-link>
+
+          
+      <a-entity
+        position="0 3 5"
+        rotation="0 180 0"
+        geometry="primitive: plane; width: 4"
+        material="color: #0000FF"
+        scale="2 2 2"
+        text="color: white; align: center; wrapCount: 25; font: dejavu;
+              value: Stare at circle for 3 sec for next scene"
+      ></a-entity>
+      
+      <a-sky src="sky/interviews-medium.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
